@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        .size{
+            position: fixed;
+            top: 0%;
+            right: 0%;
+            border-radius: 50%;
+            opacity: .5;        
+        }
+        #text{
+            clear:right;
+        }
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #1e0da5;
+            color: white;
+            padding-top: 30px;
+            min-height: 100vh;
+            width: 61vb;
+            border: bottom #e8491d 3px solid;
+        }
+        nav {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            float: left;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            background: #e8491d;
+        }
+
+        .welcome-message {
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+
+        input[type="submit"] {
+            display: block;
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #e8491d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="size">
+        <img src="th.jpeg" alt="">
+        <p id="text">VIT Vellore</p>
+    </div>
+    <header>
+        <div class="container">
+            <h1>Contact Me</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+            <section class="contact-form">
+                <h2>Contact Me</h2>
+                <form action="YOUR_BACKEND_ENDPOINT" method="POST">
+                    <label for="name">Harsh Agrawal</label>
+                    <label for="email">******@gmail.com</label>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        .size{
+            position: fixed;
+            top: 0%;
+            right: 0%;
+            border-radius: 50%;
+            opacity: .5;  
+        }
+        #text{
+            clear: right;
+        }
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+      justify-content: flex-end;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background:#1e0da5 ;
+            color: white;
+            padding-top: 30px;
+            min-height: 100vh;
+            width:61vb;
+            border-bottom: #e8491d 3px solid;
+        }
+        nav {
+        position: absolute;
+        display: flex;  
+        flex-direction: column;
+        list-style: none;  
+        padding: 0;  
+        margin: 0;  
+        float: left;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 17px;
+        }
+        nav a:hover {
+            background: #e8491d;
+        }
+        .skills, .projects {
+            margin-bottom: 30px;
+        }
+        .skills h2, .projects h2 {
+            color: #333;
+        }
+        .project {
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="size">
+        <img src="th.jpeg" alt="">
+        <p id="text">VIT Vellore</p>
+    </div>
+    <header>
+        <div class="container">
+            <h1>Portfolio</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section class="skills">
+            <h2> Basic Overview</h2>
+            <ul>
+                <li>Python</li>
+                <li>C/C++</li>
+                <li>Java</li>
+            </ul>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            
+            <div class="project">
+                <h3>Bill Counter (Java) (Group Project)</h3>
+                <p>Description: A Java application that calculates and manages billing for a retail store.</p>
+
+            </div>
+
+            <div class="project">
+                <h3>Netflix Clone (HTML/CSS)</h3>
+                <p>Description: A static clone of the Netflix landing page created using HTML and CSS.</p>
+            </div>
+            <div class="project">
+                <h3>Spotify Clone</h3>
+                <p>Description: A static clone of the Spotify.</p>
+            </div>
+            <div class="project">
+                <h3>Culianry Craftsman(Group Project)</h3>
+                <p>Description: A app that suggest rcipe and nutrianal information</p>
+            </div>
+            <div class="project">
+                <h3>Linkedin Profile</h3>
+                <a href="https://www.linkedin.com/feed/"target="new_blank">My Linkedin Profile</a><br>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

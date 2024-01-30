@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <style>
+        .size{
+            position: fixed;
+            top: 0%;
+            right: 0%;
+            border-radius: 50%;
+            opacity: .5;  
+        }
+        #text{
+            clear:right;
+        }
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            display: flex;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #1e0da5;
+            color: antiquewhite;
+            padding-top: 30px;
+            min-height: 100vh;
+            border-bottom: #e8491d 3px solid;
+        }
+        nav {
+        position: absolute;
+         display: flex; 
+        flex-direction: column;
+        list-style: none; 
+        padding: 0; 
+        margin: 0;  
+        float: left;
+            
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 17px;
+        }
+        nav a:hover {
+            background: #e8491d;
+        }
+        .welcome-message {
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+        .about, .timeline {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .timeline-item {
+            margin-bottom: 10px;
+        }
+        .timeline-item h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="size">
+    <img src="th.jpeg" alt="">
+    <p id="text">VIT Vellore</p>
+</div>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Personal Website</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+            <div class="welcome-message">
+
+                <h2>Hello, Adventurers in the Digital Realm!</h2>
+                <p>Welcome to my little corner of the internet, a digital canvas where my ideas take shape and come to life.
+                 I'm Harsh, a passionate coder, designer, and dreamer who believes in the magic of creativity and the power of technology.</p>
+                <p>Embark on a journey through my world: discover the stories behind my projects in the <a href="portfolio.html">Portfolio</a>,
+                 unravel the mysteries of my professional saga in <a href="about.html">About Me</a>, and if you wish to summon me
+                for a chat or collaboration, the ancient scrolls of <a href="contact.html">Contact</a> await you.</p>
+                <p>Let the pixels guide you and may your curiosity be rewarded. Enjoy your exploration!</p>
+                <p><b>Through basically I am more interested in doing business rather than this</b></p>
+            </div>
+</body>
+</html>
